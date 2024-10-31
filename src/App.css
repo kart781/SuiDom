@@ -1,19 +1,25 @@
+/* Root container styling */
 #root {
-  position: absolute;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
   align-items: center;
-  justify-content: space-between;
-  border: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100vw;
-  height: 100vh;
 }
 
+/* Main content wrapper */
+.main-content {
+  flex-grow: 1; /* Allows main content to grow and push footer to bottom */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer styling */
 Footer {
+  width: 100%;
+  padding: 20px;
   background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, oklch(var(--b1)) 1px);
   background-size: 4px 4px;
   backdrop-filter: blur(3px);
@@ -21,13 +27,15 @@ Footer {
   -moz-backdrop-filter: blur(3px);
 }
 
+/* Optional border styling above Footer */
 Footer::before {
+  content: "";
   display: block;
   position: absolute;
   opacity: 0.2;
   top: -1px;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   height: 1px;
   background: var(--my-gray);
 }

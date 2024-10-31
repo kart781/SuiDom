@@ -7,6 +7,9 @@ function Home() {
             className="hero min-h-screen"
             style={{
                 backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: "cover", // Ensures the image covers the entire area
+                backgroundPosition: "center 20%", // Drop the image down by 20% of the height
+                backgroundRepeat: "no-repeat", // Prevent repeating the image
         }}>
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-neutral-content text-center">

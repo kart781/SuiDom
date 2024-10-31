@@ -10,12 +10,17 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToHashElement />
-      <Navbar />
-      <Page />
-      {/* <Footer /> */}
+      <div id="root">
+        <ScrollToHashElement />
+        <Navbar />
+        <div className="main-content">
+          <Page />
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   )
 }
+
 
 export default App
