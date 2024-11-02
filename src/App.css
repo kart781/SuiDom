@@ -40,3 +40,25 @@ footer::before { /* Changed from Footer::before to footer::before */
   height: 1px;
   background: var(--my-gray); /* Ensure --my-gray is defined */
 }
+
+.navbar .mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.navbar .mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.navbar .mobile-menu-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar .mobile-menu-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
