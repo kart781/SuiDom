@@ -17,7 +17,7 @@
 }
 
 /* Footer styling */
-Footer {
+footer { /* Changed from Footer to footer */
   width: 100%;
   padding: 20px;
   background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, oklch(var(--b1)) 1px);
@@ -25,10 +25,11 @@ Footer {
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   -moz-backdrop-filter: blur(3px);
+  position: relative; /* Ensure that the pseudo-element can position itself correctly */
 }
 
 /* Optional border styling above Footer */
-Footer::before {
+footer::before { /* Changed from Footer::before to footer::before */
   content: "";
   display: block;
   position: absolute;
@@ -37,5 +38,5 @@ Footer::before {
   left: 0;
   right: 0;
   height: 1px;
-  background: var(--my-gray);
+  background: var(--my-gray); /* Ensure --my-gray is defined */
 }
