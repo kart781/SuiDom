@@ -1,5 +1,5 @@
 import React from "react";
-import logoImage from "/src/assets/img/Logo.png"; // Ensure this path is correct
+import logoImage from "../assets/img/Logo.png"; // Ensure this path is correct
 
 function Navbar() {
     return (
